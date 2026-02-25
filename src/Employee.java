@@ -1,0 +1,14 @@
+public abstract class Employee extends Person {
+    private int employeeId;
+
+    public Employee(String name, int age, int employeeId) {
+        super(name, age);
+        this.employeeId = employeeId;
+    }
+
+    public int getEmployeeId() {
+        return employeeId;
+    }
+
+    public abstract void work();
+}
